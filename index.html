@@ -8,9 +8,15 @@
 </head>
 <body>
     <header>
-        <h1>Devendra Sakhamuri</h1>
+        <h1>Hi, I'm <span>Devendra Sakhamuri</span></h1>
         <p>Data Analyst | Microsoft Certified | Python | SQL | Power BI</p>
+        <button onclick="window.location.href='#projects'">View My Work</button>
     </header>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
 
     <section id="about">
         <h2>About Me</h2>
@@ -19,21 +25,35 @@
 
     <section id="projects">
         <h2>Projects</h2>
-        <ul>
-            <li>📊 <strong>Power BI Dashboard</strong> – Interactive analytics dashboard for business insights.</li>
-            <li>📍 <strong>Geospatial Data Analysis</strong> – Using Python & GIS for transportation data.</li>
-        </ul>
+        <div class="project">
+            <img src="assets/dashboard.png" alt="Power BI Dashboard">
+            <h3>Interactive Power BI Dashboard</h3>
+            <p>Designed real-time business analytics dashboards for better insights.</p>
+        </div>
+        <div class="project">
+            <img src="assets/gan-model.png" alt="Cycle-GAN Age Regressor">
+            <h3>Cycle-GAN Age Regressor</h3>
+            <p>Built a deep learning model for age transformation in images.</p>
+        </div>
     </section>
+
 
     <section id="contact">
         <h2>Contact</h2>
-        <p>Email: <a href="mailto:devendrasakhamuri@gmail.com">devendrasakhamuri@gmail.com</a></p>
+        <p>Email: <a href="mailto:devendraprofile88@gmail.com">devendraprofile88@gmail.com</a></p>
         <p>LinkedIn: <a href="#">linkedin.com/in/devendrasakhamuri</a></p>
         <p>GitHub: <a href="#">github.com/Devendrasakhamuri</a></p>
     </section>
 
+
     <footer>
         <p>&copy; 2025 Devendra Sakhamuri. All rights reserved.</p>
     </footer>
+    <script>
+        document.getElementById("dark-mode-toggle").onclick = function() {
+            document.body.classList.toggle("dark-mode");
+        };
+    </script>
+
 </body>
 </html>
