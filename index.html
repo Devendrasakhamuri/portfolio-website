@@ -1,60 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Devendra Sakhamuri | Data Analyst Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Devendra Sakhamuri | Data Analyst Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-image: url('https://cdn.pixabay.com/photo/2017/11/09/21/41/data-2938317_1280.jpg');
+      background-size: cover;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  </style>
+  <script>
+    function toggleDarkMode() {
+      document.body.classList.toggle('bg-gray-900');
+      document.body.classList.toggle('text-white');
+    }
+  </script>
 </head>
-<body>
+<body class="text-gray-900">
+  <header class="bg-white shadow p-6">
+    <div class="container mx-auto flex justify-between items-center">
+      <img src="/portfolio%20profile%20pic.JPG" alt="Devendra Sakhamuri" class="w-20 h-20 rounded-full border-4 border-blue-500 object-cover" />
+      <div>
+        <h1 class="text-3xl font-bold">Devendra Sakhamuri</h1>
+        <p class="text-sm text-gray-600">Data Analyst | SQL | Python | Power BI | Excel | Business Analytics | Problem Solver</p>
+      </div>
+      <button onclick="toggleDarkMode()" class="bg-gray-800 text-white px-4 py-2 rounded">Toggle Dark Mode</button>
+    </div>
+  </header>
 
-    <header>
-        <h1>Hi, I'm <span>Devendra Sakhamuri</span></h1>
-        <p>Data Analyst | Microsoft Certified | Python | SQL | Power BI</p>
-        <button onclick="window.location.href='#projects'">View My Work</button>
-    </header>
+  <main class="container mx-auto mt-8 space-y-10">
 
-    <nav>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-    </nav>
-
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Master’s student at Montclair State University with expertise in Data Analytics, Python, SQL, and BI tools.</p>
+    <!-- About Section -->
+    <section>
+      <h2 class="text-2xl font-semibold mb-4">About Me</h2>
+      <div class="bg-white p-4 rounded shadow">
+        <p>I am a Computer Science graduate and detail-oriented Data Analyst with a strong foundation in data preprocessing, visualization, and generating actionable insights. My work bridges the gap between business goals and technical execution. I enjoy applying analytical thinking and tools like SQL, Python, Power BI, and Excel to solve real-world problems and optimize processes.</p>
+      </div>
     </section>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <img src="assets/dashboard.png" alt="Power BI Dashboard">
-            <h3>Interactive Power BI Dashboard</h3>
-            <p>Designed real-time business analytics dashboards for better insights.</p>
+    <!-- Education Section -->
+    <section>
+      <h2 class="text-2xl font-semibold mb-4">Education</h2>
+      <div class="bg-white p-4 rounded shadow">
+        <p class="font-bold">Master of Science in Computer Science</p>
+        <p>Montclair State University, NJ</p>
+        <p class="text-sm text-gray-500">Graduated: May 2025</p>
+
+        <p class="font-bold mt-4">Bachelor of Technology in Computer Science</p>
+        <p>Vasireddy Venkatadri Institute of Technology (VVIT), India</p>
+        <p class="text-sm text-gray-500">Graduated: June 2023</p>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section>
+      <h2 class="text-2xl font-semibold mb-4">Work Experience</h2>
+      <div class="bg-white p-4 rounded shadow space-y-4">
+        <div>
+          <h3 class="font-bold">Data Analyst – BiodivProScope, Montclair State University</h3>
+          <p class="text-sm text-gray-500">May 2024 – May 2025</p>
+          <ul class="list-disc ml-5">
+            <li>Processed biodiversity data using Python, SQL, and Excel for ecological insight generation</li>
+            <li>Built Power BI dashboards and Microsoft Fabric visualizations for conservation use</li>
+            <li>Collaborated with researchers to guide planning through data storytelling</li>
+          </ul>
         </div>
-        <div class="project">
-            <img src="assets/gan-model.png" alt="Cycle-GAN Age Regressor">
-            <h3>Cycle-GAN Age Regressor</h3>
-            <p>Built a deep learning model for age transformation in images.</p>
+
+        <div>
+          <h3 class="font-bold">Data Analyst – NYC Transportation Data Science Project</h3>
+          <p class="text-sm text-gray-500">Aug 2024 – Dec 2024</p>
+          <ul class="list-disc ml-5">
+            <li>Analyzed 100K+ motor vehicle records using Python, SQL, and Excel</li>
+            <li>Identified high-risk areas using time series and geospatial analysis</li>
+            <li>Developed dashboards in Power BI for traffic safety improvements</li>
+          </ul>
         </div>
+
+        <div>
+          <h3 class="font-bold">Salesforce Developer Intern – SmartInternz</h3>
+          <p class="text-sm text-gray-500">May 2022 – Oct 2022</p>
+          <ul class="list-disc ml-5">
+            <li>Built applications using Apex, LWC, Flows, and REST APIs</li>
+            <li>Customized CRM data models, created dashboards, and automated workflows</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="font-bold">Online Tutor – Chegg Inc.</h3>
+          <p class="text-sm text-gray-500">Sep 2021 – Nov 2021</p>
+          <ul class="list-disc ml-5">
+            <li>Tutored algorithms, data structures, and data-centric problem solving</li>
+            <li>Mentored students on Python, SQL, and data visualization principles</li>
+          </ul>
+        </div>
+      </div>
     </section>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:devendrasakhamuri@gmail.com">devendrasakhamuri@gmail.com</a></p>
-        <p>LinkedIn: <a href="#">linkedin.com/in/devendrasakhamuri</a></p>
-        <p>GitHub: <a href="#">github.com/Devendrasakhamuri</a></p>
+    <!-- Projects Section -->
+    <section>
+      <h2 class="text-2xl font-semibold mb-4">Projects</h2>
+      <div class="bg-white p-4 rounded shadow space-y-4">
+
+        <div>
+          <h3 class="font-bold">Cycle-GAN Age Regressor</h3>
+          <ul class="list-disc ml-5">
+            <li>Built deep learning model using CycleGAN for age prediction and face enhancement</li>
+            <li>Cleaned 5,000+ facial images and visualized trends with Matplotlib, Seaborn</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="font-bold">Gesture-Based Virtual Controller</h3>
+          <ul class="list-disc ml-5">
+            <li>Developed ML system using Python, OpenCV, MediaPipe for real-time gesture interaction</li>
+            <li>Processed 10K+ frames and deployed smart automation control features</li>
+          </ul>
+        </div>
+
+      </div>
     </section>
 
-    <footer>
-        <p>&copy; 2025 Devendra Sakhamuri. All rights reserved.</p>
-    </footer>
+    <!-- Resume Download -->
+    <section>
+      <h2 class="text-2xl font-semibold mb-4">Resume</h2>
+      <div class="bg-white p-4 rounded shadow">
+        <a href="/resume.pdf" download class="text-blue-600 underline">Download My Resume</a>
+      </div>
+    </section>
 
-    <script>
-        document.getElementById("dark-mode-toggle").onclick = function() {
-            document.body.classList.toggle("dark-mode");
-        };
-    </script>
+    <!-- Contact Section -->
+    <section>
+      <h2 class="text-2xl font-semibold mb-4">Contact</h2>
+      <div class="bg-white p-4 rounded shadow">
+        <p>Email: <a href="mailto:devendrasakhamuri@gmail.com" class="text-blue-600">devendrasakhamuri@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/devendra-sakhamuri" class="text-blue-600" target="_blank">linkedin.com/in/devendra-sakhamuri</a></p>
+        <p>GitHub: <a href="https://github.com/devendrasakhamuri" class="text-blue-600" target="_blank">github.com/devendrasakhamuri</a></p>
+      </div>
+    </section>
 
+  </main>
+
+  <footer class="mt-10 p-4 text-center text-sm text-gray-500">
+    © 2025 Devendra Sakhamuri. All rights reserved.
+  </footer>
 </body>
 </html>
